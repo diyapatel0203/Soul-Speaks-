@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #4e008e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ffe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.post {
+  background-color: #f0f0ff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark header {
+  background-color: #222;
+}
+
+.dark .post {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+header.dark {
+    background-color: #333;
+}
+
+/* Dark Mode Toggle Button */
+.dark-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 10px;
+  background: white;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .dark-btn {
+        top: 10px;
+        right:
