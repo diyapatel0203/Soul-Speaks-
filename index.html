@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#posts">Posts</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button onclick="toggleDarkMode()" class="dark-btn">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Blog</h2>
+    <p>This is a place where I share my thoughts, tips, and more.</p>
+  </section>
+
+  <section id="posts">
+    <h2>Latest Blog Posts</h2>
+
+    <article class="post">
+      <h3>🌸 5 Simple Tips for a Peaceful Mind</h3>
+      <p>Feeling stressed? Try meditation, journaling, nature walks, and daily gratitude. Small steps, big peace.</p>
+      <button onclick="likePost(this)">❤ Like</button> <span class="like-count">0</span>
+    </article>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 My Blog</p>
+  </footer>
+
+  <script>
+    // Dark Mode Function
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
+    // Like Button Function
+    function likePost(btn) {
+      let span = btn.nextElementSibling;
+      let count = parseInt(span.innerText);
+      span.innerText = count + 1;
+    }
+  </script>
+
+</body>
+</html>
